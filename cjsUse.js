@@ -11,10 +11,10 @@
 const res = require('./cjs.js')
 console.log(res);
 
-const res2 = require('./cjs2.js')
-console.log(res2);
+// const res2 = require('./cjs2.js')
+// console.log(res2);
 
-module.exports = {
-    res,
-    res2
-}
+// module.exports = {
+//     res,
+//     res2
+// }

@@ -1,24 +1,13 @@
-var __defProp = Object.defineProperty;
-var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __export = (target, all) => {
-  for (var name in all)
-    __defProp(target, name, { get: all[name], enumerable: true });
+var __commonJS = (cb, mod) => function __require() {
+  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
 };
-var __copyProps = (to, from, except, desc) => {
-  if (from && typeof from === "object" || typeof from === "function") {
-    for (let key of __getOwnPropNames(from))
-      if (!__hasOwnProp.call(to, key) && key !== except)
-        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+var require_cjs = __commonJS({
+  "cjs.js"(exports, module) {
+    module.exports = {
+      name1: "\u5468\u6770\u4F26",
+      name2: "\u6734\u6811"
+    };
   }
-  return to;
-};
-var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
-var esm_exports = {};
-__export(esm_exports, {
-  default: () => esm_default
 });
-module.exports = __toCommonJS(esm_exports);
-const obj = /* @__PURE__ */ Object.create({ a: 1 });
-var esm_default = obj;
+export default require_cjs();

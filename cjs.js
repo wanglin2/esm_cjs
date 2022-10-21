@@ -1,6 +1,6 @@
-// 方式一
-module.exports.name1 = '周杰伦'
-exports.name2 = '朴树'
+// // 方式一
+// module.exports.name1 = '周杰伦'
+// exports.name2 = '朴树'
 // 方式二
 // module.exports = {
 //     name1: '周杰伦',
@@ -32,6 +32,18 @@ exports.name2 = '朴树'
 
 // module.exports = 1
 
-const obj = Object.create({a: 1})
+// const obj = Object.create({a: 1})
 
-module.exports = obj
+// module.exports = obj
+
+const res = {
+    name1: '周杰伦'
+}
+module.exports = res
+if (Math.random() > 0.5) {
+    console.log(`1`, 1);
+    res.name2 = '许巍'
+} else {
+    console.log(`1`, 2);
+    res.name3 = '朴树'
+}
